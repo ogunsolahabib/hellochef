@@ -65,8 +65,8 @@ const RecipeListSlider: React.FC<Props> = ({ pageRecipeList }) => {
           transition="all 0.1s ease"
           transform={`translateX(${translateX / 10}rem)`}
         >
-          {pageRecipeList.map((props) => (
-            <RecipeCard {...props} />
+          {pageRecipeList.map((props, i) => (
+            <RecipeCard key={i} {...props} />
           ))}
         </HStack>
       </Box>

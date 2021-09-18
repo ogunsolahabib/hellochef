@@ -72,7 +72,7 @@ const RecipeCard: React.FC<Props> = ({
             {tags.map((id) => {
               const tag = allTags[id] || allTags[0];
               return (
-                <WrapItem>
+                <WrapItem key={id}>
                   <Tag
                     d="inline-block"
                     bg={tag.color}

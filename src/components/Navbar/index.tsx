@@ -18,6 +18,7 @@ interface Props {
 
 const Navbar: React.FC<Props> = ({ menuItems }) => {
   const { setCurrentGetStartedComponent } = useAppContext();
+
   return (
     <Box as="nav" p="2rem 5vw" pos="relative" bg="white">
       <Heading className="logo" pos={{ base: "static", xl: "absolute" }}>

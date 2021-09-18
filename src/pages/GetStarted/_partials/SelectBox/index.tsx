@@ -8,7 +8,7 @@ import { AppContext, useAppContext } from "Context";
 
 interface Props {}
 const SelectBox: React.FC<Props> = ({}) => {
-  const { setCurrentGetStartedComponent } = useAppContext();
+  const { setCurrentGetStartedComponent, activateMenuItem } = useAppContext();
   return (
     <>
       <Heading size="xl">Personalise Your Box</Heading>
@@ -19,6 +19,7 @@ const SelectBox: React.FC<Props> = ({}) => {
           size="md"
           onClick={() => {
             setCurrentGetStartedComponent("signUp");
+            activateMenuItem("signUp");
           }}
         >
           Select Meal Plan
